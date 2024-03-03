@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>txt2img</title>
+   
+    <link id="main-stylesheet" rel="stylesheet" href="css/main.css">
+    <link id="dark-stylesheet" rel="stylesheet" href="css/main-dark.css">
+   
+    <link rel="apple-touch-icon" sizes="180x180" href="res/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="res/favicon-32x32.png"> 
+    <link rel="icon" type="image/png" sizes="16x16" href="res/favicon-16x16.png"> 
+   
+   
+</head>
+
+<body>
+
+    
+<div class="header">
+    
+    <h1><a href="https://txt2img.dvilcans.com">txt2img</a></h1>
+    
+     <div id="darkmode-icon" onclick="toggleDarkMode()">
+     <img src="res/dark-theme-dark.svg" class="darkmode-ico">
+     </div>
+ 
+ </div>
+
+
+<center><input type="text" id="prompt" placeholder="E.g., Girl with an umbrella walking in the rain"></center>
+
+
+
+  <center><button class=aimgen onclick="generateImage()">Generate Image</button></center>
+  
+
+
+
+<!-- Add a loading tile -->
+
+<div id="loading" style="display: none;">
+  <center><img src="res/infinite-spinner.svg" alt="Loading Spinner"></center>
+  <br>
+  <center>Image generation can take up to a minute.</center>
+</div>
+
+
+<!-- Image will be displayed here -->
+<center>
+
+
+  <div id="result">
+  </div>
+  <br>
+  
+  
+<!-- Add Save Image button, initially hidden -->
+  <button id="saveButton" class=aimgen style="display: none;" onclick="saveImage()">Save Image</button>
+
+
+
+</center>
+
+
+   <script src="js/app.js"></script>
+   <script src="js/darkmode.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+    color: #1da1f2; /* Twitter blue, ya know? Feelin' social */
+    text-decoration: none; /* Keep it clean, no underlines */
+    font-size: 2.5rem; /* Match the h1 size for that consistent vibe */
+    transition: color 0.3s ease; /* Smooth color change, like a fade-out */
+    flex: 1;
+}
+
+a:hover {
+    color: #ff69b4; /* Pink on hover, keepin' it lively */
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #111;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  margin-top: 0rem;
+}
+
+.darkmode-ico {
+    width: 2rem;
+    height: 2rem;
+}
+
+#darkmode-icon {
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+
+input {
+  padding: 0.6rem; /* Cushion it up, comfort is key */
+  font-size: 1.2rem; /* Match it with the label, keepin' it smooth */
+  border: 2px solid #1da1f2; /* Border game strong, stand out in the crowd */
+  border-radius: 5px; /* Round the edges, no sharp corners here */
+  width: 70%; /* Spread it wide, take up the whole block */
+  box-sizing: border-box; /* Keepin' it real with that box-sizing */
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+/* Placeholder styling, make it subtle but noticeable */
+input::placeholder {
+  color: #a0a0a0;
+}
+
+/* Focus state, let 'em know where the spotlight's at */
+input:focus {
+  outline: none; /* No ugly outlines, we keepin' it clean */
+  border-color: #ff69b4; /* Pink border for that focus vibe */
+  box-shadow: 0 0 5px rgba(255, 105, 180, 0.5); /* A touch of glow, like a superstar */
+}
+
+/* Forms */
+label {
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Buttons */
+
+
+.aimgen {
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 0.33em;
+    font-family: inherit;
+    background: #111;
+    color: #fefefe;
+    padding: 0.7rem;
+    border: 0;
+    margin-top: 2rem; /* Add some space between the image and the button */
+    margin-bottom: 2rem;
+}
+
+.aimgen:active {
+    font-size: 0.5rem; /* Adjust the size as needed */
+}
+
+#loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center it both horizontally and vertically */
+  z-index: 9999; /* Keep it on top, ya know? */
+}
+
+#loading img {
+  width: 3rem; /* Adjust the width of the SVG spinner */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+#loading center {
+  font-size: 1rem; /* Adjust the font size of the text */
+  color: #333; /* Text color, you can change it to your style */
+  font-style: italic;
+
+}
+
+#result > img {
+/*    max-width: 100%; /* Keep your generated content within the bounds */
+    max-height: 50vh;
+    width: auto; /* Maintain that aspect ratio, playa */
+}
+
+.hidden { 
+  display: none; /*This style is applied to the product attribute forms */
+}
+
+/* For WebKit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333; /* Adjust this color to fit your dark mode scheme */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1a1a1a; /* Adjust this color to fit your dark mode scheme */
+}    
+    
+/* For Firefox */
+/* You might need to adjust this color as well */
+scrollbar-color: #333 #1a1a1a;
+scrollbar-width: thin;
+
+/* For older versions of Firefox */
+/* You might need to adjust this color as well */
+-moz-appearance: none;
+-moz-scrollbar-color: #333 #1a1a1a;   
+    
+    
+}
